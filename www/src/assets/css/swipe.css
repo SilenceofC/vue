@@ -1,0 +1,22 @@
+.spxq img{
+  width:100%;
+}
+.spxq {
+  display:block;
+  width:100%;
+}
+body{ margin:0; padding:0;-webkit-appearance:none;}
+.spxq .addWrap{ position:relative; width:100%;margin:0; padding:0;}
+
+.spxq .addWrap .swipe{overflow: hidden;visibility: hidden;position:relative;width: 100%;}
+.spxq .addWrap .swipe-wrap{overflow:hidden;position:relative;}
+.spxq .addWrap .swipe-wrap img{
+  width:100%;
+}
+.spxq .addWrap .swipe-wrap > div {float: left;width: 100%;position:relative;}
+
+.spxq #position{ position:absolute; bottom:0; right:0; padding-right:8px; margin:0; background:#000; opacity: 0.4; width:100%; filter: alpha(opacity=50);text-align:center;}
+.spxq #position li{width:10px;height:10px;margin:0 2px;display:inline-block;-webkit-border-radius:5px;border-radius:5px;background-color:#AFAFAF;}
+.spxq #position li.cur{background-color:#FF0000;}
+.img-responsive { display: block; max-width: 100%;  height: auto;}
+

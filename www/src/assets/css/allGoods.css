@@ -1,0 +1,167 @@
+@charset "UTF-8";
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    cursor:default;
+    -webkit-appearance:none;
+}
+a {
+    color: #000000;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+a,img,button,input,textarea {
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+body{
+    position: relative;
+}
+.body{
+
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    display: block;
+}
+a{
+    color: #000000;
+}
+.tour{
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid #000000;
+    position: relative;
+}
+.tour1{
+    position: absolute;
+    top:1rem;
+    left: 2%;
+}
+.tour p{
+   text-align: center;
+    line-height: 5rem;
+    font-size: 1.8rem;
+}
+.tour p i{
+    background-image: url('../img/hurry.png');
+    background-size: 15px 15px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+.tour2{
+    position: absolute;
+    top:1rem;
+    right: 2%;
+}
+
+.ycmenu{
+    display: none;
+    width:100%;
+    height: 14rem;
+    background-color: #ffffff;
+    position: absolute;
+    z-index:6666;
+    top: 4.9rem;
+}
+.ycmenu ul {
+    text-align: center;
+}
+.ycmenu ul li {
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1.6rem;
+}
+.ycmenu ul li a{
+    border-bottom: 1px solid #000000;
+    display: block;
+}
+.ycmenu ul li .a{
+    color: green;
+    border: 1px solid green;
+}
+.allsp{
+    max-width: 640px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.all figure{
+    width: 42%;
+    float: left;
+    border: 2px solid #b4b4b4;
+    margin: 0 4% 2rem 4%;
+}
+.all figure img{
+    border-radius: 0.3rem;
+}
+.all figure p {
+    padding-top:1rem;
+    font-size:1.4rem;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align:left;
+    padding-left: 2%;
+}
+.all figure div em{
+	display:inline-block;
+	margin-top:6%;
+    font-style: normal;
+    font-size:1.6rem;
+    color: red;
+    padding-left: 2%;
+}
+.all .xlgd{
+    width: 100%;
+    height: 3rem;
+    background-color: #f2f2f2;
+}
+.all .xlgd p{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color:#b0916a;
+}
+.all .zshlogo{
+    width: 100%;
+    height: 5rem;
+}
+.all .empty{
+  height:100px;
+  color:#b4b4b4;
+  width:300px;
+}
+.all .empty .em{
+  margin-left:12.5rem;
+  height:20px;
+  display:block;
+  font-size:14px;
+}
+#tour1{
+  height:26px;
+  width:20px;
+}
+#tour2{
+  width:35px;
+  height:35px;
+}
+#allcart{
+  width:38px;
+  height:35px;
+  display:inline-block;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+.all .info{
+  position:relative;
+}

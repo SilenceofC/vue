@@ -1,0 +1,140 @@
+{backgroundImage:'url(' + img1 + ')'}
+
+index_bottom:
+      <!--<figure>-->
+        <!--&lt;!&ndash;<a href="spxq.html"><img src="src/assets/img/i2.jpg" alt="商品" class="xqtp"/></a>&ndash;&gt;-->
+        <!--<router-link to="/spxq">-->
+          <!--<img src="src/assets/img/i2.jpg" alt="商品"/>-->
+        <!--</router-link>-->
+        <!--<p>Carré Blanc 简</p>-->
+        <!--<div class="info">-->
+          <!--<em class="sat">￥46&nbsp;<small>￥46</small></em>-->
+          <!--<a href="#"><img src="src/assets/img/u20.png" alt="购物车" style="width: 30px;height: 30px" align="right"/></a>-->
+        <!--</div>-->
+      <!--</figure>-->
+      <!--<figure>-->
+        <!--<router-link to="/spxq">-->
+          <!--<img src="src/assets/img/i3.jpg" alt="商品"/>-->
+        <!--</router-link>-->
+        <!--<p>蔓越莓红丝绒</p>-->
+        <!--<div class="info">-->
+          <!--<em class="sat">￥46&nbsp;<small>￥46</small></em>-->
+          <!--<a href="#"><img src="src/assets/img/u20.png" alt="购物车" style="width: 30px;height: 30px" align="right"/></a>-->
+        <!--</div>-->
+      <!--</figure>-->
+      <!--<figure>-->
+        <!--<router-link to="/spxq">-->
+          <!--<img src="src/assets/img/i4.jpg" alt="商品"/>-->
+        <!--</router-link>-->
+        <!--<p>鲜莓印雪</p>-->
+        <!--<div class="info">-->
+          <!--<em class="sat">￥46&nbsp;<small>￥46</small></em>-->
+          <!--<a href="#"><img src="src/assets/img/u20.png" alt="购物车" style="width: 30px;height: 30px" align="right"/></a>-->
+        <!--</div>-->
+      <!--</figure>-->
+      <!--<figure>-->
+        <!--<router-link to="/spxq">-->
+          <!--<img src="src/assets/img/i5.jpg" alt="商品"/>-->
+        <!--</router-link>-->
+        <!--<p>雪孩子冰淇淋蛋糕</p>-->
+        <!--<div class="info">-->
+          <!--<em class="sat">￥46&nbsp;<small>￥46</small></em>-->
+          <!--<a href="#"><img src="src/assets/img/u20.png" alt="购物车" style="width: 30px;height: 30px" align="right"/></a>-->
+        <!--</div>-->
+      <!--</figure>-->
+      <!--<figure>-->
+        <!--<router-link to="/spxq">-->
+          <!--<img src="src/assets/img/i6.jpg" alt="商品"/>-->
+        <!--</router-link>-->
+        <!--<p>约瑟芬玫瑰</p>-->
+        <!--<div class="info">-->
+          <!--<em class="sat">￥46&nbsp;<small>￥46</small></em>-->
+          <!--<a href="#"><img src="src/assets/img/u20.png" alt="购物车" style="width: 30px;height: 30px" align="right"/></a>-->
+        <!--</div>-->
+      <!--</figure>-->
+      <!--<figure>-->
+        <!--<router-link to="/spxq">-->
+          <!--<img src="src/assets/img/i7.jpg" alt="商品"/>-->
+        <!--</router-link>-->
+        <!--<p>bonbon 棒棒糖</p>-->
+        <!--<div class="info">-->
+          <!--<em class="sat">￥46&nbsp;<small>￥46</small></em>-->
+          <!--<a href="#"><img src="src/assets/img/u20.png" alt="购物车" style="width: 30px;height: 30px" align="right"/></a>-->
+        <!--</div>-->
+      <!--</figure>-->
+      <!--<figure>-->
+        <!--<router-link to="/spxq">-->
+          <!--<img src="src/assets/img/i8.jpg" alt="商品"/>-->
+        <!--</router-link>-->
+        <!--<p> 香溢新芝</p>-->
+        <!--<div class="info">-->
+          <!--<em class="sat">￥46&nbsp;<small>￥46</small></em>-->
+          <!--<a href="#"><img src="src/assets/img/u20.png" alt="购物车" style="width: 30px;height: 30px" align="right"/></a>-->
+        <!--</div>-->
+      <!--</figure>-->
+      <!--<figure>-->
+        <!--<router-link to="/spxq">-->
+          <!--<img src="src/assets/img/i9.jpg" alt="商品"/>-->
+        <!--</router-link>-->
+        <!--<p>爱丽丝花境</p>-->
+        <!--<div class="info">-->
+          <!--<em class="sat">￥46&nbsp;<small>￥46</small></em>-->
+          <!--<a href="#"><img src="src/assets/img/u20.png" alt="购物车" style="width: 30px;height: 30px" align="right"/></a>-->
+        <!--</div>-->
+      <!--</figure>-->
+      <!--<figure>-->
+        <!--<router-link to="/spxq">-->
+          <!--<img src="src/assets/img/i10.jpg" alt="商品"/>-->
+        <!--</router-link>-->
+        <!--<p>百利派对</p>-->
+        <!--<div class="info">-->
+          <!--<em class="sat">￥46&nbsp;<small>￥46</small></em>-->
+          <!--<a href="#"><img src="src/assets/img/u20.png" alt="购物车" style="width: 30px;height: 30px" align="right"/></a>-->
+        <!--</div>-->
+      <!--</figure>-->
+
+
+
+      goup.vue
+      script,,,,mounted
+        $(function () {
+              $(".Apply").click(function () {
+                $(".cancel").show();
+                $(".theme-popover-mask").show();
+              });
+              $(".btn").click(function () {
+                $(".cancel").hide();
+                $(".theme-popover-mask").hide();
+              });
+              $("#apply").click(function () {
+                $(".cancel").hide();
+                $(".theme-popover-mask").hide();
+                $('.false').show().delay(3000).hide(0);
+              });
+              //获得文本框对象
+              var t = $(".num");
+              //数量增加操作
+              $("#plus").click(function () {
+                t.val(parseInt(t.val()) + 1);
+                if (parseInt(t.val()) != 1) {
+                  $('#reduce').attr('disabled', false);
+                }
+                setTotal();
+              });
+              //数量减少操作
+              $("#reduce").click(function () {
+                if (parseInt(t.val()) > 1) {
+                  t.val(parseInt(t.val()) - 1);
+                  setTotal();
+      //                    $('#reduce').attr('disabled', true);
+                }
+      //                if (parseInt(t.val()) == 0) {
+      //                    return false;
+      ////                    $('#reduce').attr('disabled', true);
+      //                }
+              });
+              function setTotal() {
+                $("#red").html("<a style='color: red'>￥</a>"+(parseInt(t.val()) *99).toFixed(2));//toFixed()是保留小数点的函数
+              }
+              setTotal();
+            });

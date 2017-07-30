@@ -1,0 +1,469 @@
+@charset "UTF-8";
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    cursor:default;
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+body{
+    position: relative;
+}
+.body{
+    margin: 0 auto;
+
+}
+img{
+    width: 100%;
+    display: block;
+}
+a{
+    color: #000000;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+
+}
+a,img,button,input,textarea {
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+.pay .tour{
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid #000000;
+    position: relative;
+}
+.pay .tour1{
+    position: absolute;
+    top:1rem;
+    left: 2%;
+}
+.pay .tour p{
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1.8rem;
+}
+.pay .header3{
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid #000000;
+}
+.pay .header3 a{
+    line-height: 5rem;
+    padding: 0 5% 0 5%;
+    display:block;
+    float: left;
+}
+.pay .header3 .btn1{
+    font-size: 1.3rem;
+    height:3rem;
+    width: 6rem;
+    color: green;
+    background-color: #ffffff;
+    border:1px solid green;
+    border-radius: 6px;
+    text-align: center;
+    outline: none;
+  margin-left:6rem;
+}
+.pay .header3 .btn2{
+    font-size: 1.3rem;
+    height:3rem;
+    width: 6rem;
+    color: #000000;
+    background-color: #ffffff;
+    border:1px solid #000000;
+    border-radius: 6px;
+    text-align: center;
+    outline: none;
+}
+.pay .address{
+    width: 100%;
+    height: 5rem;
+    position: relative;
+}
+.pay .address .daohang{
+    position: absolute;
+    left: 1rem;
+    top:0.5rem;
+}
+.pay .address .caizhu{
+    position: absolute;
+    left: 5rem;
+    top:1rem;
+    font-size: 1.3rem;
+}
+.pay .caizhu .person{
+    margin-top: -0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pay .caizhu .diqiu{
+    margin-top: -1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pay .diqiu{
+    margin-top: -1rem;
+}
+.pay .address .xdz{
+    position: absolute;
+    right:1.5rem;
+    top:1.5rem;
+    font-size: 2rem;
+}
+.pay .address2{
+    width: 100%;
+    height: 5rem;
+    position: relative;
+    display: none;
+}
+.pay .address2 .daohang{
+    position: absolute;
+    left: 1rem;
+    top:0.5rem;
+}
+.pay .address2 .caizhu{
+    position: absolute;
+    left: 5rem;
+    top:1rem;
+    font-size: 1.3rem;
+}
+.pay .caizhu .store{
+    margin-top: -0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pay .caizhu .saddress{
+    margin-top: -1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pay .address2 .xdz{
+    display: none;
+    position: absolute;
+    right:1.5rem;
+    top:1.5rem;
+    font-size: 2rem;
+}
+.pay .diqiu{
+    margin-top: -1rem;
+}
+.pay .address .xdz{
+    position: absolute;
+    right:1.5rem;
+    top:1.5rem;
+    font-size: 2rem;
+}
+.pay .zfdd,.pay .yunfei,.pay .sjly{
+    border-bottom: 1px solid #dcdcdc;
+}
+.pay .zfdd ul{
+    width: 100%;
+    height: 70px;
+}
+.pay .zfdd ul li {
+    display: block;
+    float: left;
+}
+.pay .li1{
+    margin-top: 0.5rem;
+    width: 10%;
+    text-align: center;
+}
+.pay .li1 img{
+    margin-left: 1.5rem;
+    border: 1px solid #dcdcdc;
+    padding: 0.1rem;
+}
+.pay .li2{
+    width: 60%;
+    font-size: 1.3rem;
+    line-height: 70px;
+    text-align: center;
+}
+.pay .li3{
+    width: 26%;
+    font-size: 1.3rem;
+    line-height: 35px;
+    text-align: right;
+}
+.pay .yunfei ul{
+    width: 100%;
+    height: 3rem;
+}
+.pay .yunfei ul li{
+    float: left;
+    line-height: 3rem;
+    font-size: 1.4rem;
+    width: 50%;
+}
+.pay .yunfei ul .yunli{
+    text-align: left;
+    padding-left:1.5rem;
+}
+.pay .yunfei ul .qianli{
+    text-align: right;
+    padding-right:1.5rem;
+}
+.pay .sjly{
+    height: 4rem;
+  text-align: center;
+}
+.pay .sjly input{
+    width: 90%;
+    height: 3rem;
+    margin: 0.5rem 0 0 0rem;
+    border-radius: 5px;
+    border:1px solid #dcdcdc;
+    outline: none;
+    font-size: 1.3rem;
+}
+.pay .zjfy{
+    width: 100%;
+    height: 5rem;
+    position: relative;
+}
+.pay .fy{
+    position: absolute;
+    right: 1.5rem;
+    top:2rem;
+}
+.pay .fy p{
+    font-size: 1.6rem;
+    color: red;
+}
+.pay .pay .footing{
+    width: 100%;
+    height: 8rem;
+    border-top: 1px solid #000000;
+    position: fixed;
+    bottom:0;
+    background-color: #ffffff;
+}
+.pay .pay .footing ul{
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    top:2rem;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.pay .footing ul li{
+    display: block;
+    float: left;
+}
+.pay .li6{
+    padding-top: 0.3rem;
+    white-space: nowrap;
+    width: 60%;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+}
+.pay .li7{
+    width:40%;
+
+}
+.pay .li7 button{
+    white-space: nowrap;
+    width: 100%;
+    font-size: 1.3rem;
+    line-height: 4rem;
+    background-color: green;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    align-content: center;
+
+}
+.pay .menu{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: none;
+    background-color: #ffffff;
+    z-index: 9999;
+}
+.pay .menu ul{
+	padding-top:1rem;
+    padding-bottom:1rem;
+}
+.pay .menu ul li{
+
+    width: 80%;
+    text-align: center;
+    margin: 1rem auto;
+}
+.pay .menu ul  a{
+    line-height: 3rem;
+    margin-top: 1rem;
+    display: block;
+    font-size: 1.6rem;
+    letter-spacing: 0.5rem;
+    border: 1px solid #898989;
+}
+.pay .menu ul .aclass{
+    color: green;
+    border: 1px solid green;
+}
+.pay .changeadd{
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    z-index: 444;
+    display: none;
+}
+.pay .shdz{
+    height: 5rem;
+}
+.pay .shdz p{
+    border-top:1px solid #979797 ;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    border-bottom: 1px solid #979797;
+}
+.pay .shdz .gbdd {
+    text-align: right;
+    margin-right: 1.5rem;
+    margin-top: -3rem;
+}
+.pay .shdz .gbdd span{
+  	   display: block;
+    font-size: 3rem;
+   margin-top: -3.8rem;
+}
+.pay .dzlb{
+    border-bottom: 1px solid #979797;
+}
+.pay .harvest{
+	margin-left:1.5rem;
+	font-size:1.3rem;
+}
+.pay .harvest .person{
+    margin-top: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pay .harvest .diqiu{
+    margin-top: -1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pay hr{
+	border:none;
+}
+.pay .gldz{
+    width: 100%;
+}
+.pay .gldz li{
+    float: left;
+}
+.pay .gldz .li10{
+    margin-left: 1.5rem;
+    margin-top: 1.3rem;
+	font-size: 1.6rem;
+}
+.pay .gldz .li11{
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 4.5rem;
+}
+.pay .gldz .li12{
+    float: right;
+    line-height: 4rem;
+    margin-right: 1.5rem;
+}
+.pay .gldz .li12 button{
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    line-height: 4rem;
+    font-size: 2rem;
+}
+.pay .zjdd{
+    position: fixed;
+    bottom: 0;
+    z-index: 888;
+    width: 100%;
+    height: 20rem;
+    background-color: #ffffff;
+    display: none;
+}
+.pay .sfxx table{
+    width: 100%;
+    height: 10rem;
+    margin: 0 auto;
+}
+.pay .sfxx table td {
+    font-size: 1.3rem;
+   border: 1px solid #dcdcdc;
+}
+.pay .sfxx table .td1 {
+  text-align: center;
+}
+.pay .sfxx table tr td input{
+    font-size: 1.3rem;
+    height: 3rem;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.pay .bc{
+    width: 100%;
+    margin-top: 1rem;
+   text-align: center;
+}
+.pay .theme-popover-mask {
+    z-index: 99;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.4;
+    filter:alpha(opacity=40);
+    display:none
+}
+.pay .bc button{
+    height: 3rem;
+    width: 80%;
+    background-color: #ffffff;
+    border: 1px solid green;
+    outline: none;
+}
+.pay .sfxx .paytable{
+ BORDER-COLLAPSE: collapse;
+  borderColor:#000000;
+  cellSpacing:0;
+  width:280px ;
+  align:center;
+  bgColor:#ffffff;
+  border:1px;
+}
+#btn3{
+  margin-left:10rem;
+  margin-top:6rem;
+}

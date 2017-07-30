@@ -1,0 +1,116 @@
+@charset "UTF-8";
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    cursor:default;
+    -webkit-appearance:none;
+}
+
+#reg{
+  overflow:hidden;
+  background-color: #000000;
+}
+.reg .dlbg{
+  height:700px;
+  background-color: #000000;
+}
+.reg a {
+    color: #000000;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+.reg a,img,button,input,textarea {
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+
+
+.reg .body{
+margin: 0 auto;
+}
+.reg img{
+    width: 100%;
+    display: block;
+}
+.reg a{
+    color: #000000;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+.reg .dlbg .dl{
+    width: 100%;
+    height: 35rem;
+    background-color: #ffffff;
+    position: absolute;
+    top:10rem;
+}
+.reg .dl p{
+    margin: 1.5rem 6% 1.5rem 6%;
+    width: 88%;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #000000;
+}
+.reg .dl .srk{
+    text-align: center;
+}
+.reg .dl .srk .input1{
+    margin: 1.5rem 6% 1.5rem 6%;
+    width: 88%;
+    height: 3rem;
+    font-size: 1.4rem;
+    outline: none;
+    border: 1px solid #dcdcdc;
+
+}
+.reg .dl .srk .input2{
+    margin: 1.5rem 0 1.5rem 2rem;
+    width: 40%;
+    margin-right: 8%;
+    height: 3rem;
+    font-size: 1.4rem;
+    outline: none;
+    border: 1px solid #dcdcdc;
+  float:left;
+  display: block;
+}
+.reg .dl .srk .input3{
+  width:35%;
+  height:3rem;
+  line-height:35px;
+  position:absolute;
+  right:2.2rem;
+  top:13.8rem;
+    font-size: 1.4rem;
+    outline: none;
+    background-color: white;
+    border: 1px solid #dcdcdc;
+}
+.reg .dl .srk button{
+    margin: 1.5rem 6% 1.5rem 6%;
+    width: 88%;
+    height: 3rem;
+    font-size: 1.4rem;
+    background-color: green;
+    outline: none;
+    color: #ffffff;
+    border: 1px solid green;
+    border-radius: 4px;
+}
+.reg .beizhu{
+    width: 100%;
+    margin-top: 2rem;
+}
+.reg .beizhu li{
+    float: right;
+    padding-right: 6%;
+    white-space: nowrap;
+}

@@ -1,0 +1,211 @@
+没有字段，没有约束，每条数据之间都没有关系
+缓存型的数据,速度快
+非关系型数据库。。多重数据种类
+
+库就是库
+表就是集合
+一条数据就是文档
+字段就是区域
+索引就是索引
+
+
+mysql：表，而且是个二维表，一一对应，
+mongoDb：json
+
+建了库不放表，这个库是不存在的，建了表，不放数据这个表是不存在的
+
+而磁盘是可以的
+
+use user;没有user这个库也会自动创建
+但是show dbs的时候并不能看见，因为没有表，
+
+
+建库：如果不存在，就创建，如果存在就等于切换，不会替换
+
+use 2017-07-06
+建一个集合：
+db.createCollection('user')
+这个时候show dbs
+就有这个数据库名了
+
+在当前这个库就可以查当前的这个表
+show collections查看表
+上面返回的是表本身
+
+db.getCollectionNames()
+返回的是数组，也是在查表
+
+db.createCollection('',{size:20,max:100,capped:true})
+最多100条，但也有可能80条的时候就不可以了，因为大小超过了，，，定量
+
+db.集合名.isCapped()
+true:就是定量
+false:不是定量
+
+db.集合名.drop()
+返回true就删除了
+
+{username:'aa',password:'alss',age:12}
+
+插入db.user.insert(把上面那json放里面)
+查看db.user.find()
+注：user是集合
+
+[{username:'aa',password:'alss',age:12},
+{username:'aa',ge:12},
+{username:'aa',ge:12}
+]
+
+
+
+
+[{logo:''},
+{}
+]
+也可以一下子插入多条数据，，，写成数组的形式
+
+insert,save可以插入相同数据
+插入除了insert还有save
+方法一条数据或多个数据同上
+
+save是强插模式（主键id重复的情况下）
+就是设置_id可以覆盖
+
+_id是主键，这个不可以重复，只有save可以
+没有指定为主键的情况下，就相当于两条不同的数据
+名称就算一样,但是_id不一样
+
+
+db.user.find({},{_id:0})
+这样查出来的结果没有_id出现
+
+
+
+db.user.deleteOne({username:'aa'})  一条
+db.suer.remove({数据}) 多条如果只有一条肯定就删除一条
+
+
+db.user.insertOne()
+db.user.insert()中间就写一条
+
+
+db.user.remove()什么都不给就全删了
+
+
+db.dropDatabase()
+
+
+
+
+
+这些括号中间的都是写{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+index_top:
+[
+{id:1,title:'停下来享受美味!',image:'src/assets/img/11.jpg'},
+{id:2,title:'the best gift&premium cake',image:'src/assets/img/u61.png'}
+]
+index_middle:
+[
+{id:1,img:'src/assets/img/12.jpg',total:'30',over:'5',time:1498655481},
+{id:2,img:'src/assets/img/13.jpg',total:'40',over:'15',time:1498656966}
+]
+index_bottom:
+[
+{id:1,img:'src/assets/img/i1.jpg',title:'Nino 尼诺',price:'56',discount:'37'},
+{id:2,img:'src/assets/img/i2.jpg',title:'Carré Blanc 简',price:'66',discount:'47'},
+{id:3,img:'src/assets/img/i3.jpg',title:'蔓越莓红丝绒',price:'78',discount:'66'},
+{id:4,img:'src/assets/img/i4.jpg',title:'鲜莓印雪',price:'99',discount:'87'},
+{id:5,img:'src/assets/img/i5.jpg',title:'雪孩子冰淇淋蛋糕',price:'58',discount:'57'},
+{id:6,img:'src/assets/img/i6.jpg',title:'约瑟芬玫瑰',price:'96',discount:'87'},
+{id:7,img:'src/assets/img/i7.jpg',title:'bonbon 棒棒糖',price:'56',discount:'67'},
+{id:8,img:'src/assets/img/i8.jpg',title:'香溢新芝',price:'96',discount:'87'},
+{id:9,img:'src/assets/img/i9.jpg',title:'爱丽丝花境',price:'76',discount:'67'},
+{id:10,img:'src/assets/img/i10.jpg',title:'百利派对',price:'76',discount:'66'}
+]
+block
+[
+{
+ id:1,img:'src/assets/img/12.jpg',area:'社区服务.零点店',font:'预售,3.27',font2:'适合4-7人食用 SIZE:高度约4.5cm（2磅）需提前5小时预定',price:200,dissolve:111,total:30,over:5,date1:'2017.6.18',date2:'2017.10.3'
+ },
+ {
+ id:2,img:'src/assets/img/13.jpg',area:'社区服务.零点店',font:'预售,3.29',font2:'适合4-7人食用 SIZE:高度约4.5cm（2磅）需提前5小时预定',price:300,dissolve:211,total:40,over:15,date1:'2017.6.20',date2:'2017.10.13'
+ }
+]
+
+spxq:
+[
+{id:1,img:'src/assets/img/i1.jpg',title:'Nino 尼诺',price:'56',taste1:"绵软细腻",tast2:"芝士",tase3:"cheese",sweet:"一颗星"},
+{id:2,img:'src/assets/img/i2.jpg',title:'Carré Blanc 简',price:'66',taste1:"绵软细腻",tast2:"芝士",tase3:"cheese",sweet:"二颗星"},
+{id:3,img:'src/assets/img/i3.jpg',title:'蔓越莓红丝绒',price:'78',taste1:"绵软细腻",tast2:"芝士",tase3:"cheese",sweet:"三颗星"},
+{id:4,img:'src/assets/img/i4.jpg',title:'鲜莓印雪',price:'99',taste1:"绵软细腻",tast2:"芝士",tase3:"cheese",sweet:"二颗星"},
+{id:5,img:'src/assets/img/i5.jpg',title:'雪孩子冰淇淋蛋糕',price:'58',taste1:"绵软细腻",tast2:"芝士",tase3:"cheese",sweet:"四颗星"},
+{id:6,img:'src/assets/img/i6.jpg',title:'约瑟芬玫瑰',price:'96',taste1:"绵软细腻",tast2:"芝士",tase3:"cheese",sweet:"二颗星"},
+{id:7,img:'src/assets/img/i7.jpg',title:'bonbon 棒棒糖',price:'56',taste1:"绵软细腻",tast2:"芝士",tase3:"cheese",sweet:"一颗星"},
+{id:8,img:'src/assets/img/i8.jpg',title:'香溢新芝',price:'96',taste1:"绵软细腻",tast2:"芝士",tase3:"cheese",sweet:"三颗星"},
+{id:9,img:'src/assets/img/i9.jpg',title:'爱丽丝花境',price:'76',taste1:"绵软细腻",tast2:"芝士",tase3:"cheese",sweet:"一颗星"},
+{id:10,img:'src/assets/img/i10.jpg',title:'百利派对',price:'76',taste1:"绵软细腻",tast2:"芝士",tase3:"cheese",sweet:"五颗星"}
+]
+
+
+allgoods:
+[
+{id:1,img:'src/assets/img/i1.jpg',title:'Nino 尼诺',price:'56'},
+{id:2,img:'src/assets/img/i2.jpg',title:'Carré Blanc 简',price:'66'},
+{id:3,img:'src/assets/img/i3.jpg',title:'蔓越莓红丝绒',price:'78'},
+{id:4,img:'src/assets/img/i4.jpg',title:'鲜莓印雪',price:'99'},
+{id:5,img:'src/assets/img/i5.jpg',title:'雪孩子冰淇淋蛋糕',price:'58'},
+{id:6,img:'src/assets/img/i6.jpg',title:'约瑟芬玫瑰',price:'96'},
+{id:7,img:'src/assets/img/i7.jpg',title:'bonbon 棒棒糖',price:'56'},
+{id:8,img:'src/assets/img/i8.jpg',title:'香溢新芝',price:'96'},
+{id:9,img:'src/assets/img/i9.jpg',title:'爱丽丝花境',price:'76'},
+{id:10,img:'src/assets/img/i10.jpg',title:'百利派对',price:'76'}
+]
+
+
+mydg:
+[
+{id:1,img:'src/assets/img/u67.png',title:'奶油1',price:99},
+{id:2,img:'src/assets/img/u67.png',title:'奶油2',price:44},
+{id:3,img:'src/assets/img/u67.png',title:'奶油3',price:49},
+{id:4,img:'src/assets/img/u67.png',title:'奶油4',price:78},
+{id:5,img:'src/assets/img/u67.png',title:'奶油5',price:88},
+{id:6,img:'src/assets/img/u67.png',title:'奶油6',price:32},
+{id:7,img:'src/assets/img/u67.png',title:'奶油7',price:54},
+{id:8,img:'src/assets/img/u67.png',title:'奶油7',price:89},
+{id:9,img:'src/assets/img/u67.png',title:'奶油9',price:96},
+{id:10,img:'src/assets/img/u67.png',title:'奶油10',price:80}
+]
+
+mygroup:
+[
+{id:1,img:'src/assets/img/11.jpg',title1:'Nino 尼诺',title2:'适合4-7人食用 SIZE:高度约4.5cm（2磅）需提前5小时预定',number:1,price:89},
+{id:2,img:'src/assets/img/12.jpg',title1:'爱丽丝花境',title2:'适合4-7人食用 SIZE:15cm*8.2cm需提前5小时预定',number:2,price:129},
+{id:3,img:'src/assets/img/13.jpg',title1:'瑞可塔厚爱',title2:'现在，瑞可塔~马里奥来帮你通关50元拾取升磅蛋糕',number:1,price:79},
+{id:4,img:'src/assets/img/14.jpg',title1:'半熟芝士',title2:'适合4-7人食用 SIZE:6.8cm*5cm*3.5cm*5个需提前24小时预定',number:1,price:89},
+{id:4,img:'src/assets/img/15.jpg',title1:'小‘食光’ 大礼包',title2:'愿,岁月湿润每个爱小食，爱生活的你',number:1,price:123}
+]
+
+user:
+[
+{id:1,icon:'src/assets/img/icon1.jpg',username:'Silence',password:123456},
+{id:2,icon:'src/assets/img/icon2.jpg',username:'Yogo',password:123456},
+{id:3,icon:'src/assets/img/icon3.jpg',username:'Alice',password:123456}
+]

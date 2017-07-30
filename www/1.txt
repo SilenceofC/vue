@@ -1,0 +1,2 @@
+home,user,spxq,allGoods,mydg,sucess   有
+login,shopping,zhmm,address,group,mygroup,pay,reg,spdd  没有

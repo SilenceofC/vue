@@ -1,0 +1,42 @@
+.router-link-active{
+  background:blue;
+  color:#fff;
+  opacity:0.3;
+}
+.footer_aa{width:100%;height:4rem;position:fixed; left:0; bottom:0; border-top:1px solid #9e9a95;}
+.footer_aa li{
+  float:left;
+  background:#fff;
+  height:4rem;
+  width:33.33%;
+
+}
+.footer_aa li a{
+  font-size:1.5rem;
+  text-align:center;
+  height:4rem;
+  width:100%;
+  color:#bcbcbc;
+  display:block;
+}
+.footer_aa .nav_index{
+  background-image:url("../img/opcity.png");
+  background-repeat:no-repeat;
+  background-position-x: 48px;
+  background-position-y: 24px;
+  height: 4rem;
+}
+.footer_aa .nav_me{
+  background-image:url("../img/opcity.png");
+  background-repeat:no-repeat;
+  background-position-x: -60px;
+  background-position-y: 24px;
+  height: 4rem;
+}
+.footer_aa .nav_shop{
+  background-image:url("../img/opcity.png");
+  background-repeat:no-repeat;
+  background-position-x: -170px;
+  background-position-y: 24px;
+  height: 4rem;
+}
