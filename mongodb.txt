@@ -12,31 +12,12 @@
 mysql：表，而且是个二维表，一一对应，
 mongoDb：json
 
-建了库不放表，这个库是不存在的，建了表，不放数据这个表是不存在的
-
-而磁盘是可以的
-
-use user;没有user这个库也会自动创建
-但是show dbs的时候并不能看见，因为没有表，
-
-
-建库：如果不存在，就创建，如果存在就等于切换，不会替换
-
-use 2017-07-06
-建一个集合：
-db.createCollection('user')
-这个时候show dbs
-就有这个数据库名了
-
-在当前这个库就可以查当前的这个表
-show collections查看表
-上面返回的是表本身
+ 
 
 db.getCollectionNames()
-返回的是数组，也是在查表
-
+返回的是数组 
 db.createCollection('',{size:20,max:100,capped:true})
-最多100条，但也有可能80条的时候就不可以了，因为大小超过了，，，定量
+最多100条 
 
 db.集合名.isCapped()
 true:就是定量
